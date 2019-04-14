@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chatbox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4mo-bT-jNL">
+                                <rect key="frame" x="20" y="312" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xs7-FH-qSx">
+                                <rect key="frame" x="20" y="368" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zg-ra-V4P">
+                                <rect key="frame" x="20" y="260" width="374" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfs-yq-Um6">
+                                <rect key="frame" x="317" y="428" width="77" height="30"/>
+                                <state key="normal" title="Registerien"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYR-3l-9XO">
+                                <rect key="frame" x="20" y="421" width="74" height="30"/>
+                                <state key="normal" title="Los Gehts!"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4mo-bT-jNL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Frl-do-kcl"/>
+                            <constraint firstItem="gfs-yq-Um6" firstAttribute="leading" secondItem="ZYR-3l-9XO" secondAttribute="trailing" constant="223" id="TaF-PB-OC1"/>
+                            <constraint firstItem="ZYR-3l-9XO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WcF-TS-Ggt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4mo-bT-jNL" secondAttribute="trailing" constant="20" id="c6B-64-z1u"/>
+                            <constraint firstItem="1zg-ra-V4P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dYB-9m-z08"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1zg-ra-V4P" secondAttribute="trailing" constant="20" id="eIT-0t-By8"/>
+                            <constraint firstItem="ZYR-3l-9XO" firstAttribute="top" secondItem="Xs7-FH-qSx" secondAttribute="bottom" constant="23" id="edf-5p-8DC"/>
+                            <constraint firstItem="4mo-bT-jNL" firstAttribute="top" secondItem="1zg-ra-V4P" secondAttribute="bottom" constant="32.5" id="fqC-xk-YGL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xs7-FH-qSx" secondAttribute="trailing" constant="20" id="hcB-fn-dNL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gfs-yq-Um6" secondAttribute="trailing" constant="20" id="lcH-pa-oDW"/>
+                            <constraint firstItem="gfs-yq-Um6" firstAttribute="top" secondItem="Xs7-FH-qSx" secondAttribute="bottom" constant="30" id="nHJ-CI-Chk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZYR-3l-9XO" secondAttribute="bottom" constant="411" id="nyn-Bk-ddS"/>
+                            <constraint firstItem="Xs7-FH-qSx" firstAttribute="top" secondItem="4mo-bT-jNL" secondAttribute="bottom" constant="26" id="r2c-5Z-xaD"/>
+                            <constraint firstItem="1zg-ra-V4P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="216" id="s2n-15-NWC"/>
+                            <constraint firstItem="Xs7-FH-qSx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sdk-f9-KkX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gfs-yq-Um6" secondAttribute="bottom" constant="404" id="ut2-mr-ViR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+</document>
