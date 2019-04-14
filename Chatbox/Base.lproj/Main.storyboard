@@ -34,7 +34,7 @@
                                 <rect key="frame" x="20" y="260" width="374" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="16"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfs-yq-Um6">
                                 <rect key="frame" x="317" y="428" width="77" height="30"/>
